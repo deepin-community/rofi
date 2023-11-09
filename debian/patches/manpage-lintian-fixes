@@ -1,0 +1,80 @@
+Description: fixes lintian warnings in manpages
+ .
+ rofi (1.7.3-0.1) unstable; urgency=medium
+ .
+   * Non-maintainer upload.
+   * New upstream version 1.7.3
+   * bump standards version
+   * debian/copyright: fix lintian warnings for missing fields
+   * debian/rules: remove dh_override_configure
+   * added patch to fix lintian warnings on manpages
+Author: Sai Karthik <kskarthik@disroot.org>
+Forwarded: Not-Needed
+--- a/doc/rofi-dmenu.5
++++ b/doc/rofi-dmenu.5
+@@ -2,7 +2,7 @@
+ .TH ROFI-DMENU 5 rofi-dmenu
+ .SH NAME
+ .PP
+-\fBrofi dmenu mode\fP - Rofi dmenu emulation
++\fBrofi\-dmenu\fP - Rofi dmenu emulation
+ 
+ .SH DESCRIPTION
+ .PP
+@@ -269,7 +269,7 @@
+ \fB\fC-display-columns\fR
+ 
+ .PP
+-A comma seperated list of columns to show.
++A comma separated list of columns to show.
+ 
+ .PP
+ \fB\fC-display-column-separator\fR
+--- a/doc/rofi-keys.5
++++ b/doc/rofi-keys.5
+@@ -2,7 +2,7 @@
+ .TH ROFI-KEYS 5 rofi-keys
+ .SH NAME
+ .PP
+-\fBrofi keys\fP - Rofi Key and Mouse bindings
++\fBrofi\-keys\fP - Rofi Key and Mouse bindings
+ 
+ .SH DESCRIPTION
+ .PP
+--- a/doc/rofi-script.5
++++ b/doc/rofi-script.5
+@@ -2,7 +2,7 @@
+ .TH ROFI-SCRIPT 5 rofi-script
+ .SH NAME
+ .PP
+-\fBrofi script mode\fP - Rofi format for scriptable mode.
++\fBrofi\-script\fP - Rofi format for scriptable mode.
+ 
+ .SH DESCRIPTION
+ .PP
+--- a/doc/rofi-debugging.5
++++ b/doc/rofi-debugging.5
+@@ -1,9 +1,10 @@
+ .nh
+-.TH ROFI DEBUGGING 5 rofi debugging
++.TH ROFI-DEBUGGING 5 rofi-debugging
+ .SH NAME
+ .PP
+-Debugging rofi.
++\fBDebugging\-rofi.\fP - a rofi debugging.
+ 
++.SH DESCRIPTION
+ .PP
+ When reporting an issue with rofi crashing, or misbehaving. It helps to do some small test
+ to help pin-point the problem.
+--- a/doc/rofi.1
++++ b/doc/rofi.1
+@@ -1334,7 +1334,7 @@
+ 
+ .SS ssh
+ .PP
+-Shows a list of SSH targets based on your \fB\fCssh\fR config file, and allows to quickly \fB\fCssh\fR into them.
++Shows a list of SSH targets based on your \fB\fCssh\fR config file, and allows one to quickly \fB\fCssh\fR into them.
+ 
+ .SS keys
+ .PP
