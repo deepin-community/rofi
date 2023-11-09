@@ -1,0 +1,26 @@
+Author: Vinay Keshava <vinaykeshava@disroot.org>
+Forwarded: Not-Needed
+--- a/data/rofi-theme-selector.desktop
++++ b/data/rofi-theme-selector.desktop
+@@ -1,8 +1,8 @@
+ [Desktop Entry]
+-Encoding=UTF-8
+ Version=1.0
+ Type=Application
+ Terminal=false
+ Exec=rofi-theme-selector
+ Name=Rofi Theme Selector
+ Icon=rofi
++Keywords=theme-selector;
+--- a/data/rofi.desktop
++++ b/data/rofi.desktop
+@@ -1,8 +1,8 @@
+ [Desktop Entry]
+-Encoding=UTF-8
+ Version=1.0
+ Type=Application
+ Terminal=false
+ Exec=rofi -show
+ Name=Rofi
+ Icon=rofi
++Keywords=application-launcher;window-switcher;
